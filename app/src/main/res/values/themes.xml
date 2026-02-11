@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.HireReady" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_accent</item>
+        <item name="colorPrimaryVariant">@color/green_gradient_end</item>
+        <item name="colorOnPrimary">@color/dark_background</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorPrimaryDark</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+</resources>

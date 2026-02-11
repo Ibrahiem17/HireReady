@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "534537771924",
+    "project_id": "hireready-704d9",
+    "storage_bucket": "hireready-704d9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:534537771924:android:cc3c46c5c3380bf188cd81",
+        "android_client_info": {
+          "package_name": "com.example.hireready"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3BppkoHLxyxaFezunW4l-0rOBJEwgvdI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

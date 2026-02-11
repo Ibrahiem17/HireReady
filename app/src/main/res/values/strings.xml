@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HireReady</string>
+
+    <string-array name="job_roles">
+        <item>HR/Admin</item>
+        <item>Sales</item>
+        <item>Customer Support</item>
+        <item>Software Engineer</item>
+        <item>Marketing</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="target_markets">
+        <item>Pakistan</item>
+        <item>Gulf (UAE, Saudi Arabia, etc.)</item>
+    </string-array>
+</resources>

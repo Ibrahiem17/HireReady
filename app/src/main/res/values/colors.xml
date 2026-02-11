@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C1C1E</color>
+    <color name="colorPrimaryDark">#1C1C1E</color>
+    <color name="colorAccent">#A8FF78</color>
+
+    <color name="dark_background">#12201D</color>
+    <color name="card_background">#2C3A37</color>
+    <color name="button_background">#404F4A</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="green_accent">#A8FF78</color>
+    <color name="green_gradient_start">#A8FF78</color>
+    <color name="green_gradient_end">#78FFB3</color>
+</resources>
