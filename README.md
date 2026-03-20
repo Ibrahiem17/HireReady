@@ -16,7 +16,7 @@ Features
 -  Firebase integration for data storage
 -  Session history & tracking (extendable)
 
- How It Works
+How It Works
 
 1. User selects an interview pack  
 2. Answers questions using voice or text  
@@ -25,4 +25,13 @@ Features
 5. Results are stored in Firebase Firestore  
 6. Feedback is displayed with score and suggestions
 
-## 🏗️ Architecture
+Architecture
+Android App (Java)
+↓
+SpeechRecognizer (Voice → Text)
+↓
+AIEvaluator (OpenAI API)
+↓
+Firebase Firestore (Store Sessions)
+↓
+FeedbackActivity (Display Results)
