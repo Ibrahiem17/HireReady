@@ -1,37 +1,72 @@
-HireReady – Interview Prep Simulator
+# HireReady
 
-HireReady is an Android mobile application designed to help students and job seekers practice interviews and receive AI-powered feedback. The app simulates real interview scenarios and evaluates answers based on clarity, structure, and relevance.
+HireReady is an Android application that simulates real-world interview scenarios and provides structured, AI-driven feedback. It is designed to help students and job seekers improve communication, answer quality, and interview confidence through repeated practice and evaluation.
 
-Features
+## Overview
 
--  Role-based interview question packs (HR, Sales, Support, etc.)
--  Voice input using Speech Recognition
--  Text-based answer mode
--  Real-time interview simulation with timer
--  AI-powered evaluation (score out of 100)
--  Feedback including:
+Traditional interview preparation often lacks structured practice and actionable feedback. HireReady addresses this gap by combining guided mock interviews with automated evaluation. Users can answer role-based interview questions using voice or text, and receive a score along with detailed feedback highlighting strengths, weaknesses, and areas for improvement.
+
+## Features
+
+- Role-based interview question packs (e.g., HR, Sales, Customer Support)
+- Voice input using Android Speech Recognition
+- Text-based answer mode
+- Timed interview simulation
+- AI-based evaluation with score out of 100
+- Structured feedback:
   - Strengths
   - Weaknesses
   - Improvement suggestions
--  Firebase integration for data storage
--  Session history & tracking (extendable)
+- Firebase-backed data storage for interview sessions
+- Extensible architecture for analytics and progress tracking
 
-How It Works
 
-1. User selects an interview pack  
-2. Answers questions using voice or text  
-3. Answers are converted into text (if voice)  
-4. AI evaluates responses using OpenAI API  
-5. Results are stored in Firebase Firestore  
-6. Feedback is displayed with score and suggestions
 
-Architecture
-Android App (Java)
-↓
-SpeechRecognizer (Voice → Text)
-↓
-AIEvaluator (OpenAI API)
-↓
-Firebase Firestore (Store Sessions)
-↓
-FeedbackActivity (Display Results)
+## System Architecture
+
+
+Android Application (Java)
+|
+|-- SpeechRecognizer (voice to text)
+|
+|-- AIEvaluator (OpenAI API via HTTP)
+|
+|-- Firebase Firestore
+| |-- users/{userId}/userSessions/{sessionId}
+|
+|-- FeedbackActivity (data visualization)
+
+
+## How It Works
+
+1. The user selects an interview question pack.
+2. The application presents questions in sequence.
+3. The user answers using voice or text input.
+4. Voice input is converted into text using SpeechRecognizer.
+5. All responses are combined and sent to the OpenAI API.
+6. The AI evaluates the responses based on clarity, structure, and relevance.
+7. The result (score and feedback) is stored in Firestore.
+8. The Feedback screen retrieves and displays the evaluation.
+
+---
+
+## Technology Stack
+
+### Frontend
+- Android (Java)
+- XML layouts with Material Design components
+
+### Backend and Services
+- Firebase Authentication
+- Cloud Firestore
+
+### AI Integration
+- OpenAI API (gpt-4o-mini)
+- OkHttp for HTTP requests
+
+---
+
+## Author
+
+Muhammad Ibrahiem  
+Software Engineering Student
