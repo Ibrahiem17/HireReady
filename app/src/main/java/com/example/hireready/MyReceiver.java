@@ -7,7 +7,7 @@ import android.content.Intent;
 public class MyReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
-        // The service's onDestroy() method will handle stopping the ringtone.
+
         context.stopService(new Intent(context, MyService.class));
     }
 }

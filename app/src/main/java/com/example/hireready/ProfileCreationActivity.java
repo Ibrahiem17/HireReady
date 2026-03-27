@@ -48,7 +48,6 @@ public class ProfileCreationActivity extends AppCompatActivity {
 
         db = FirebaseFirestore.getInstance();
 
-        // Get the name, UID, and email from the intent
         name = getIntent().getStringExtra("NAME");
         uid = getIntent().getStringExtra("UID");
         email = getIntent().getStringExtra("EMAIL");
@@ -60,7 +59,7 @@ public class ProfileCreationActivity extends AppCompatActivity {
         otherRoleLayout = findViewById(R.id.tilOtherRole);
         otherRoleEditText = findViewById(R.id.etOtherRole);
 
-        // Populate Job Role Dropdown
+
         ArrayAdapter<CharSequence> jobRoleAdapter = ArrayAdapter.createFromResource(this,
                 R.array.job_roles, R.layout.dropdown_item);
         rolesAutoComplete.setAdapter(jobRoleAdapter);
@@ -80,7 +79,7 @@ public class ProfileCreationActivity extends AppCompatActivity {
         saveProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // 1. Validate all fields first
+
                 int selectedMarketId = marketChipGroup.getCheckedChipId();
                 String selectedRole = rolesAutoComplete.getText().toString();
                 int selectedExperienceId = experienceRadioGroup.getCheckedRadioButtonId();
@@ -105,7 +104,7 @@ public class ProfileCreationActivity extends AppCompatActivity {
                     }
                 }
 
-                // 2. Prepare the data and start the background save
+
                 Chip selectedMarketChip = findViewById(selectedMarketId);
                 RadioButton selectedExperienceButton = findViewById(selectedExperienceId);
 

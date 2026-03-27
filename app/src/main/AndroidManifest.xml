@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- Gallery access -->
+
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
@@ -75,7 +75,7 @@
             android:exported="false" />
         <activity
             android:name=".RecentSessionDetailActivity"
-            android_exported="false" />
+            android:exported="false" />
         <activity
             android:name=".LearnActivity"
             android:exported="false" />

@@ -51,14 +51,14 @@ public class RecentSessionDetailActivity extends AppCompatActivity {
 
                     if (!doc.exists()) return;
 
-                    // Pack title
+
                     packTitleText.setText(doc.getString("packTitle"));
 
-                    // Score
+
                     Long score = doc.getLong("score");
                     scoreText.setText(score != null ? score + "%" : "N/A");
 
-                    // Answers
+
                     List<String> answers = (List<String>) doc.get("answers");
                     if (answers != null && !answers.isEmpty()) {
                         StringBuilder ansBuilder = new StringBuilder();
@@ -73,7 +73,7 @@ public class RecentSessionDetailActivity extends AppCompatActivity {
                         answersText.setText("No answers available.");
                     }
 
-                    // AI Feedback
+
                     Map<String, Object> aiFeedback =
                             (Map<String, Object>) doc.get("aiFeedback");
 

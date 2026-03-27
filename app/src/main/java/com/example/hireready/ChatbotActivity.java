@@ -33,7 +33,7 @@ public class ChatbotActivity extends AppCompatActivity {
     private MessageAdapter adapter;
     private List<Message> messageList = new ArrayList<>();
 
-    private final String apiKey = "AIzaSyBjSfuf7HlzETOSgyj8YgI8k8fwg0ZmKEU";
+    private final String apiKey = BuildConfig.GEMINI_API_KEY;
 
     private final String url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=" + apiKey;
 

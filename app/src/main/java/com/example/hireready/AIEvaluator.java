@@ -11,7 +11,7 @@ import okhttp3.Response;
 
 public class AIEvaluator {
 
-    private static final String OPENAI_API_KEY = ApiKeys.OPENAI_API_KEY;
+    private static final String OPENAI_API_KEY = BuildConfig.OPENAI_API_KEY;
     private static final String OPENAI_URL = "https://api.openai.com/v1/chat/completions";
 
     public interface EvaluationCallback {
